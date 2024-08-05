@@ -17,18 +17,19 @@
   <meta name="keywords" content="">
   
     <meta property="og:type" content="article">
-<meta property="og:title" content="Liu19">
-<meta property="og:url" content="http://example.com/2024/01/17/confused/index.html">
+<meta property="og:title" content="碎碎念">
+<meta property="og:url" content="http://example.com/2024/01/24/%E6%96%B0%E5%BB%BA%20Markdown/index.html">
 <meta property="og:site_name" content="Liu19">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-01-16T20:26:44.688Z">
-<meta property="article:modified_time" content="2024-01-16T20:26:44.688Z">
+<meta property="article:published_time" content="2024-01-23T16:18:38.868Z">
+<meta property="article:modified_time" content="2024-01-23T16:20:35.884Z">
 <meta property="article:author" content="liu19">
+<meta property="article:tag" content="physics">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Liu19</title>
+  <title>碎碎念 - Liu19</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -223,7 +224,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="碎碎念"></span>
           
         </div>
 
@@ -234,8 +235,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-01-17 04:26" pubdate>
-          2024年1月17日 凌晨
+        <time datetime="2024-01-24 00:18" pubdate>
+          2024年1月24日 凌晨
         </time>
       </span>
     
@@ -302,7 +303,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header"></h1>
+            <h1 id="seo-header">碎碎念</h1>
             
             
               <div class="markdown-body">
@@ -316,6 +317,13 @@
               <div class="post-metas my-3">
   
   
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/physics/" class="print-no-link">#physics</a>
+      
+    </div>
+  
 </div>
 
 
@@ -324,8 +332,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
-      <div>http://example.com/2024/01/17/confused/</div>
+      <div>碎碎念</div>
+      <div>http://example.com/2024/01/24/新建 Markdown/</div>
     </div>
     <div class="license-meta">
       
@@ -337,7 +345,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年1月17日</div>
+          <div>2024年1月24日</div>
         </div>
       
       
@@ -369,9 +377,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/01/24/%E6%96%B0%E5%BB%BA%20Markdown/" title="碎碎念">
+                      <a href="/2024/08/05/nontopo-soliton/" title="非拓扑孤子">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">碎碎念</span>
+                        <span class="hidden-mobile">非拓扑孤子</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -379,8 +387,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/01/01/newyear-2024/" title="新年好">
-                        <span class="hidden-mobile">新年好</span>
+                      <a href="/2024/01/17/confused/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -468,6 +476,12 @@
 
 
   
+
+
+  
+  
+
+
 
 
 
@@ -686,6 +700,49 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script defer src="/js/leancloud.js" ></script>
 
