@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>备忘</title>
+    <link href="/2024/09/23/memo-math/"/>
+    <url>/2024/09/23/memo-math/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="delta-函数"><a href="#delta-函数" class="headerlink" title="$\delta$ 函数"></a>$\delta$ 函数</h1><p>:apple: 如果函数 $f(x)$ 的实根 $x_i$ 全是单根，那么有关系<br>$$<br>\delta(f(x)) &#x3D; \sum_i \frac{\delta(x-x_i)}{\abs{f’(x_i)}}<br>$$</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>非拓扑孤子</title>
     <link href="/2024/08/05/nontopo-soliton/"/>
     <url>/2024/08/05/nontopo-soliton/</url>
