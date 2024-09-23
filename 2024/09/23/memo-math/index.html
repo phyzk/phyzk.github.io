@@ -27,7 +27,7 @@
 <meta property="og:description" content="$\delta$ 函数:apple: 如果函数 $f(x)$ 的实根 $x_i$ 全是单根，那么有关系$$\delta(f(x)) &#x3D; \sum_i \frac{\delta(x-x_i)}{\abs{f’(x_i)}}$$">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-09-23T01:54:07.611Z">
-<meta property="article:modified_time" content="2024-09-23T02:08:07.062Z">
+<meta property="article:modified_time" content="2024-09-23T02:09:08.548Z">
 <meta property="article:author" content="liu19">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -455,6 +455,12 @@
   
 
 
+  
+  
+
+
+
+
 
 
 
@@ -671,6 +677,49 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script defer src="/js/leancloud.js" ></script>
 
