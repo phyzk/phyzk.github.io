@@ -1,4 +1,4 @@
-const ap = new APlayer({
+const ap = new aplayer({
   container: document.getElementById('aplayer'),
   fixed: true,
   lrcType: 3,

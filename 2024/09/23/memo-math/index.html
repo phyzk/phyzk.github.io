@@ -19,12 +19,12 @@
   <meta name="author" content="liu19">
   <meta name="keywords" content="">
   
-    <meta name="description" content="$\delta$ 函数 🍎 如果函数 $f(x)$ 的实根 $x_i$ 全是单根，那么有关系 $$ \delta(f(x)) &#x3D; \sum_i \frac{\delta(x-x_i)}{|f’(x_i)|} $$ 1⃣ 首先证明 $\delta(ax) &#x3D; \frac{\delta(x)}{|a|}$ $$ \begin{aligned} \int^\infty_{-\infty} \mathr">
+    <meta name="description" content="\(\delta\) 函数 🍎 如果函数 \(f(x)\) 的实根 \(x_i\) 全是单根，那么有关系 \[ \delta(f(x)) &#x3D; \sum_i \frac{\delta(x-x_i)}{|f&#39;(x_i)|} \] 1⃣ 首先证明 \(\delta(ax) &#x3D; \frac{\delta(x)}{|a|}\) \[ \begin{aligned}     \int^\infty_{-\i">
 <meta property="og:type" content="article">
 <meta property="og:title" content="备忘">
 <meta property="og:url" content="https://phyzk.github.io/2024/09/23/memo-math/index.html">
 <meta property="og:site_name" content="Liu19">
-<meta property="og:description" content="$\delta$ 函数 🍎 如果函数 $f(x)$ 的实根 $x_i$ 全是单根，那么有关系 $$ \delta(f(x)) &#x3D; \sum_i \frac{\delta(x-x_i)}{|f’(x_i)|} $$ 1⃣ 首先证明 $\delta(ax) &#x3D; \frac{\delta(x)}{|a|}$ $$ \begin{aligned} \int^\infty_{-\infty} \mathr">
+<meta property="og:description" content="\(\delta\) 函数 🍎 如果函数 \(f(x)\) 的实根 \(x_i\) 全是单根，那么有关系 \[ \delta(f(x)) &#x3D; \sum_i \frac{\delta(x-x_i)}{|f&#39;(x_i)|} \] 1⃣ 首先证明 \(\delta(ax) &#x3D; \frac{\delta(x)}{|a|}\) \[ \begin{aligned}     \int^\infty_{-\i">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://github.githubassets.com/images/icons/emoji/unicode/1f34e.png?v8">
 <meta property="og:image" content="https://github.githubassets.com/images/icons/emoji/unicode/0031-20e3.png?v8">
@@ -81,7 +81,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"phyzk.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"aIzMI71ehqHt2Zmtb9brdIzf-MdYXbMMI","app_key":"PhHdbbOxTPdJ9ZV6YE9KKf0w","server_url":null,"path":"window.location.pathname","ignore_local":true},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"woyaola":21922965},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"phyzk.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"aIzMI71ehqHt2Zmtb9brdIzf-MdYXbMMI","app_key":"PhHdbbOxTPdJ9ZV6YE9KKf0w","server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"woyaola":21922965},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -247,7 +247,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          508 字
+          516 字
         
       </span>
     
@@ -302,43 +302,69 @@
             
               <div class="markdown-body">
                 
-                <h1>$\delta$ 函数</h1>
-<p><span class="github-emoji"><span>🍎</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f34e.png?v8" srcset="/img/loading.gif" lazyload aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 如果函数 $f(x)$ 的实根 $x_i$ 全是单根，那么有关系<br>
-$$<br>
-\delta(f(x)) = \sum_i \frac{\delta(x-x_i)}{|f’(x_i)|}<br>
-$$</p>
-<p><span class="github-emoji"><span>1⃣</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/0031-20e3.png?v8" srcset="/img/loading.gif" lazyload aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 首先证明 $\delta(ax) = \frac{\delta(x)}{|a|}$<br>
-$$<br>
-\begin{aligned}<br>
-\int^\infty_{-\infty} \mathrm{d}x \delta (ax) &amp;= \int^{\infty\cdot a}<em>{-\infty\cdot a}<br>
-\mathrm{d}y \frac{\delta (y)}{a}<br>
-\<br>
-&amp;= \int^{\infty}</em>{-\infty} \mathrm{d}y \frac{\delta (y)}{|a|}<br>
-\end{aligned}<br>
-$$<br>
-<span class="github-emoji"><span>2⃣</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/0032-20e3.png?v8" srcset="/img/loading.gif" lazyload aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 假设函数 $f(x)$ 具有一系列零点 $x_i$ 。附近展开 $f(x) = f(x_i) + f’(x_i)(x-x_i) + \frac{1}{2}f’'(x_i)(x-x_i)^2$</p>
-<p>$$<br>
-\begin{align}<br>
-\int^\infty_{-\infty} \delta(f(x)) \mathrm{d}x &amp;= \sum_i \lim_{\epsilon\rightarrow 0} \int^{x_i+\epsilon}<em>{x_i-\epsilon} \delta(f(x)) \mathrm{d}x \tag{1.1} \label{eq1}<br>
-\<br>
-&amp;= \sum_i \lim</em>{\epsilon\rightarrow 0} \int^{x_i+\epsilon}<em>{x_i-\epsilon} \delta\biggl( f’(x_i)(x-x_i) + \frac{1}{2}f’'(x_i)(x-x_i)^2 \biggr) \mathrm{d}x \tag{1.2} \label{eq2}<br>
-\<br>
-&amp;= \sum_i \lim</em>{\epsilon\rightarrow 0} \int^{x_i+\epsilon}<em>{x_i-\epsilon} \delta\biggl( \underbrace{f’(x_i)(x-x_i)}</em>{\epsilon} + \underbrace{\frac{1}{2}f’‘(x_i)(x-x_i)^2}<em>{\epsilon^2} \biggr) \mathrm{d}x \tag{1.3} \label{eq3}<br>
-\<br>
-&amp;= \sum_i  \int^{\infty}</em>{-\infty} \delta\biggl( f’(x_i)(x-x_i) \biggr) \tag{1.4} \label{eq4}<br>
-\<br>
-&amp;= \sum_i \frac{\delta (x-x_i)}{|f’(x_i)|} \tag{1.5} \label{eq5}<br>
-\end{align}<br>
-$$</p>
+                <h1 id="delta-函数"><span class="math inline">\(\delta\)</span>
+函数</h1>
+<p><span class="github-emoji"><span>🍎</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f34e.png?v8" srcset="/img/loading.gif" lazyload aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 如果函数 <span class="math inline">\(f(x)\)</span> 的实根
+<span class="math inline">\(x_i\)</span> 全是单根，那么有关系 <span class="math display">\[
+\delta(f(x)) = \sum_i \frac{\delta(x-x_i)}{|f'(x_i)|}
+\]</span></p>
+<p><span class="github-emoji"><span>1⃣</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/0031-20e3.png?v8" srcset="/img/loading.gif" lazyload aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 首先证明 <span class="math inline">\(\delta(ax) =
+\frac{\delta(x)}{|a|}\)</span> <span class="math display">\[
+\begin{aligned}
+    \int^\infty_{-\infty} \mathrm{d}x \delta (ax) &amp;=
+\int^{\infty\cdot a}_{-\infty\cdot a}
+    \mathrm{d}y \frac{\delta (y)}{a}
+    \\
+    &amp;= \int^{\infty}_{-\infty} \mathrm{d}y \frac{\delta (y)}{|a|}
+\end{aligned}
+\]</span> <span class="github-emoji"><span>2⃣</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/0032-20e3.png?v8" srcset="/img/loading.gif" lazyload aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 假设函数 <span class="math inline">\(f(x)\)</span>
+具有一系列零点 <span class="math inline">\(x_i\)</span> 。附近展开 <span class="math inline">\(f(x) = f(x_i) + f'(x_i)(x-x_i) +
+\frac{1}{2}f''(x_i)(x-x_i)^2\)</span></p>
+<p><span class="math display">\[
+\begin{align}
+    \int^\infty_{-\infty} \delta(f(x)) \mathrm{d}x &amp;= \sum_i
+\lim_{\epsilon\rightarrow 0} \int^{x_i+\epsilon}_{x_i-\epsilon}
+\delta(f(x)) \mathrm{d}x \tag{1.1} \label{eq1}
+    \\
+    &amp;= \sum_i \lim_{\epsilon\rightarrow 0}
+\int^{x_i+\epsilon}_{x_i-\epsilon} \delta\biggl( f'(x_i)(x-x_i) +
+\frac{1}{2}f''(x_i)(x-x_i)^2 \biggr) \mathrm{d}x \tag{1.2}
+\label{eq2}
+    \\
+    &amp;= \sum_i \lim_{\epsilon\rightarrow 0}
+\int^{x_i+\epsilon}_{x_i-\epsilon} \delta\biggl(
+\underbrace{f'(x_i)(x-x_i)}_{\epsilon} +
+\underbrace{\frac{1}{2}f''(x_i)(x-x_i)^2}_{\epsilon^2} \biggr)
+\mathrm{d}x \tag{1.3} \label{eq3}
+    \\
+    &amp;= \sum_i  \int^{\infty}_{-\infty} \delta\biggl(
+f'(x_i)(x-x_i) \biggr) \tag{1.4} \label{eq4}
+    \\
+    &amp;= \sum_i \frac{\delta (x-x_i)}{|f'(x_i)|} \tag{1.5}
+\label{eq5}
+\end{align}
+\]</span></p>
 <p>其中</p>
 <ul>
-<li>$\eqref{eq1}$ 是将整个积分区间分成了最多只包含一个零点的一系列小区间，因为 $\delta$ 函数的存在， 只有包含 $f(x)$ 零点的那些小的积分区间才会有贡献。并且由于 $\delta$ 函数的性质，严格说来只有零点附近那“一点点”才有贡献，我们用一个无穷小量 $\epsilon$ 来衡量。</li>
-<li>$\eqref{eq2}$ 是将那一个小区间的函数在零点附近做展开。因为 $x_i$ 是 $f(x)$ 的单根，所以最低可以是一阶导数。</li>
-<li>$\eqref{eq3}$ 是把求极限操作直接拿到 $\delta$ 函数里面考虑（这么做可能有点不太好嘿嘿 <span class="github-emoji"><span>😋</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f60b.png?v8" srcset="/img/loading.gif" lazyload aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>）这样的话二阶导对应的是高阶小量</li>
-<li>$\eqref{eq4}$ 补上了剩下的积分区间，因为其他地方在 $\delta$ 函数的保护下为零</li>
-<li>$\eqref{eq4}$ 中的  $f’(x_i)$ 是一个常数，利用前面的第 <span class="github-emoji"><span>1⃣</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/0031-20e3.png?v8" srcset="/img/loading.gif" lazyload aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 点就可以得到 $\eqref{eq5}$</li>
+<li><span class="math inline">\(\eqref{eq1}\)</span>
+是将整个积分区间分成了最多只包含一个零点的一系列小区间，因为 <span class="math inline">\(\delta\)</span> 函数的存在， 只有包含 <span class="math inline">\(f(x)\)</span>
+零点的那些小的积分区间才会有贡献。并且由于 <span class="math inline">\(\delta\)</span>
+函数的性质，严格说来只有零点附近那“一点点”才有贡献，我们用一个无穷小量
+<span class="math inline">\(\epsilon\)</span> 来衡量。</li>
+<li><span class="math inline">\(\eqref{eq2}\)</span>
+是将那一个小区间的函数在零点附近做展开。因为 <span class="math inline">\(x_i\)</span> 是 <span class="math inline">\(f(x)\)</span>
+的单根，所以最低可以是一阶导数。</li>
+<li><span class="math inline">\(\eqref{eq3}\)</span>
+是把求极限操作直接拿到 <span class="math inline">\(\delta\)</span>
+函数里面考虑（这么做可能有点不太好嘿嘿
+<span class="github-emoji"><span>😋</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f60b.png?v8" srcset="/img/loading.gif" lazyload aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>）这样的话二阶导对应的是高阶小量</li>
+<li><span class="math inline">\(\eqref{eq4}\)</span>
+补上了剩下的积分区间，因为其他地方在 <span class="math inline">\(\delta\)</span> 函数的保护下为零</li>
+<li><span class="math inline">\(\eqref{eq4}\)</span> 中的 <span class="math inline">\(f'(x_i)\)</span> 是一个常数，利用前面的第
+<span class="github-emoji"><span>1⃣</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/0031-20e3.png?v8" srcset="/img/loading.gif" lazyload aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 点就可以得到 <span class="math inline">\(\eqref{eq5}\)</span></li>
 </ul>
-<p>$\delta (x^2-a^2) = \frac{1}{2|a|}[\delta (x-a)+\delta (x+a)]$</p>
+<p><span class="math inline">\(\delta (x^2-a^2) = \frac{1}{2|a|}[\delta
+(x-a)+\delta (x+a)]\)</span></p>
 
                 
               </div>
