@@ -19,12 +19,12 @@
   <meta name="author" content="liu19">
   <meta name="keywords" content="">
   
-    <meta name="description" content="APlayer 🍭 Wow, such a beautiful HTML5 music player 特别赞助商    安装 使用 npm: 1npm install aplayer --save 使用 Yarn: 1yarn add aplayer 入门  &lt;div id&#x3D;&quot;aplayer2&quot;&gt;&lt;button class&#x3D;&quot;docute-button load&quot;&gt;点击加">
+    <meta name="description" content="APlayer 🍭 Wow, such a beautiful HTML5 music player 特别赞助商        安装 使用 npm: 1npm install aplayer --save 使用 Yarn: 1yarn add aplayer 入门      点击加载播放器  123&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;APlayer.min.css&quot;&amp;">
 <meta property="og:type" content="website">
 <meta property="og:title" content="page.title">
 <meta property="og:url" content="https://phyzk.github.io/js/APlayer/docs/zh-Hans/README.html">
 <meta property="og:site_name" content="Liu19">
-<meta property="og:description" content="APlayer 🍭 Wow, such a beautiful HTML5 music player 特别赞助商    安装 使用 npm: 1npm install aplayer --save 使用 Yarn: 1yarn add aplayer 入门  &lt;div id&#x3D;&quot;aplayer2&quot;&gt;&lt;button class&#x3D;&quot;docute-button load&quot;&gt;点击加">
+<meta property="og:description" content="APlayer 🍭 Wow, such a beautiful HTML5 music player 特别赞助商        安装 使用 npm: 1npm install aplayer --save 使用 Yarn: 1yarn add aplayer 入门      点击加载播放器  123&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;APlayer.min.css&quot;&amp;">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://player.dogecloud.com/img/logo_with_product3.png">
 <meta property="article:published_time" content="2024-10-06T07:36:49.966Z">
@@ -65,6 +65,7 @@
 
   
 <link rel="stylesheet" href="/js/APlayer/dist/APlayer.min.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_2033025_v5d852q2c0f.css">
 
 
 
@@ -242,12 +243,12 @@
                 
 
 <article class="page-content">
-  <h1 id="aplayer">APlayer</h1>
+  <h1>APlayer</h1>
 <p>🍭 Wow, such a beautiful HTML5 music player</p>
 <h2 id="特别赞助商">特别赞助商</h2>
-<p><a href="https://www.dogecloud.com/?ref=dplayer" target="_blank">
-<img width="222px" src="https://player.dogecloud.com/img/logo_with_product3.png" srcset="/img/loading.gif" lazyload>
-</a></p>
+<a href="https://www.dogecloud.com/?ref=dplayer" target="_blank">
+    <img width="222px" src="https://player.dogecloud.com/img/logo_with_product3.png" srcset="/img/loading.gif" lazyload>
+</a>
 <h2 id="安装">安装</h2>
 <p>使用 npm:</p>
 <figure class="highlight ada"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">npm install aplayer <span class="hljs-comment">--save</span><br></code></pre></td></tr></tbody></table></figure>
@@ -255,7 +256,7 @@
 <figure class="highlight routeros"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">yarn <span class="hljs-built_in">add</span> aplayer<br></code></pre></td></tr></tbody></table></figure>
 <h2 id="入门">入门</h2>
 <div class="aplayer-wrap">
-<pre><code class="hljs">&lt;div id="aplayer2"&gt;&lt;button class="docute-button load"&gt;点击加载播放器&lt;/div&gt;</code></pre>
+    <div id="aplayer2"><button class="docute-button load">点击加载播放器</button></div>
 </div>
 <figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"APlayer.min.css"</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"aplayer"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"APlayer.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></tbody></table></figure>
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> ap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">APlayer</span>({<br>    <span class="hljs-attr">container</span>: <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'aplayer'</span>),<br>    <span class="hljs-attr">audio</span>: [{<br>        <span class="hljs-attr">name</span>: <span class="hljs-string">'name'</span>,<br>        <span class="hljs-attr">artist</span>: <span class="hljs-string">'artist'</span>,<br>        <span class="hljs-attr">url</span>: <span class="hljs-string">'url.mp3'</span>,<br>        <span class="hljs-attr">cover</span>: <span class="hljs-string">'cover.jpg'</span><br>    }]<br>});<br></code></pre></td></tr></tbody></table></figure>
@@ -263,7 +264,6 @@
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">import</span> <span class="hljs-string">'APlayer/dist/APlayer.min.css'</span>;<br><span class="hljs-keyword">import</span> <span class="hljs-title class_">APlayer</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'APlayer'</span>;<br><br><span class="hljs-keyword">const</span> ap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">APlayer</span>(options);<br></code></pre></td></tr></tbody></table></figure>
 <h2 id="参数">参数</h2>
 <table>
-
 <thead>
 <tr>
 <th>名称</th>
@@ -274,7 +274,7 @@
 <tbody>
 <tr>
 <td>container</td>
-<td>document.querySelector('.aplayer')</td>
+<td>document.querySelector(‘.aplayer’)</td>
 <td>播放器容器元素</td>
 </tr>
 <tr>
@@ -294,23 +294,23 @@
 </tr>
 <tr>
 <td>theme</td>
-<td>'#b7daff'</td>
+<td>‘#b7daff’</td>
 <td>主题色</td>
 </tr>
 <tr>
 <td>loop</td>
-<td>'all'</td>
-<td>音频循环播放, 可选值: 'all', 'one', 'none'</td>
+<td>‘all’</td>
+<td>音频循环播放, 可选值: ‘all’, ‘one’, ‘none’</td>
 </tr>
 <tr>
 <td>order</td>
-<td>'list'</td>
-<td>音频循环顺序, 可选值: 'list', 'random'</td>
+<td>‘list’</td>
+<td>音频循环顺序, 可选值: ‘list’, ‘random’</td>
 </tr>
 <tr>
 <td>preload</td>
-<td>'auto'</td>
-<td>预加载，可选值: 'none', 'metadata', 'auto'</td>
+<td>‘auto’</td>
+<td>预加载，可选值: ‘none’, ‘metadata’, ‘auto’</td>
 </tr>
 <tr>
 <td>volume</td>
@@ -323,7 +323,7 @@
 <td>音频信息, 应该是一个对象或对象数组</td>
 </tr>
 <tr>
-<td>audio.name</td>
+<td><a target="_blank" rel="noopener" href="http://audio.name">audio.name</a></td>
 <td>-</td>
 <td>音频名称</td>
 </tr>
@@ -354,8 +354,8 @@
 </tr>
 <tr>
 <td>audio.type</td>
-<td>'auto'</td>
-<td>可选值: 'auto', 'hls', 'normal' 或其他自定义类型, <a target="_blank" rel="noopener" href="https://aplayer.js.org/#/home?id=mse-support">详情</a></td>
+<td>‘auto’</td>
+<td>可选值: ‘auto’, ‘hls’, ‘normal’ 或其他自定义类型, <a target="_blank" rel="noopener" href="https://aplayer.js.org/#/home?id=mse-support">详情</a></td>
 </tr>
 <tr>
 <td>customAudioType</td>
@@ -384,63 +384,97 @@
 </tr>
 <tr>
 <td>storageName</td>
-<td>'aplayer-setting'</td>
+<td>‘aplayer-setting’</td>
 <td>存储播放器设置的 localStorage key</td>
 </tr>
 </tbody>
 </table>
 <p>例如:</p>
 <div class="aplayer-wrap">
-<pre><code class="hljs">&lt;div id="aplayer3"&gt;&lt;button class="docute-button load"&gt;点击加载播放器&lt;/div&gt;</code></pre>
+    <div id="aplayer3"><button class="docute-button load">点击加载播放器</button></div>
 </div>
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> ap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">APlayer</span>({<br>    <span class="hljs-attr">container</span>: <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'player'</span>),<br>    <span class="hljs-attr">mini</span>: <span class="hljs-literal">false</span>,<br>    <span class="hljs-attr">autoplay</span>: <span class="hljs-literal">false</span>,<br>    <span class="hljs-attr">theme</span>: <span class="hljs-string">'#FADFA3'</span>,<br>    <span class="hljs-attr">loop</span>: <span class="hljs-string">'all'</span>,<br>    <span class="hljs-attr">order</span>: <span class="hljs-string">'random'</span>,<br>    <span class="hljs-attr">preload</span>: <span class="hljs-string">'auto'</span>,<br>    <span class="hljs-attr">volume</span>: <span class="hljs-number">0.7</span>,<br>    <span class="hljs-attr">mutex</span>: <span class="hljs-literal">true</span>,<br>    <span class="hljs-attr">listFolded</span>: <span class="hljs-literal">false</span>,<br>    <span class="hljs-attr">listMaxHeight</span>: <span class="hljs-number">90</span>,<br>    <span class="hljs-attr">lrcType</span>: <span class="hljs-number">3</span>,<br>    <span class="hljs-attr">audio</span>: [<br>        {<br>            <span class="hljs-attr">name</span>: <span class="hljs-string">'name1'</span>,<br>            <span class="hljs-attr">artist</span>: <span class="hljs-string">'artist1'</span>,<br>            <span class="hljs-attr">url</span>: <span class="hljs-string">'url1.mp3'</span>,<br>            <span class="hljs-attr">cover</span>: <span class="hljs-string">'cover1.jpg'</span>,<br>            <span class="hljs-attr">lrc</span>: <span class="hljs-string">'lrc1.lrc'</span>,<br>            <span class="hljs-attr">theme</span>: <span class="hljs-string">'#ebd0c2'</span><br>        },<br>        {<br>            <span class="hljs-attr">name</span>: <span class="hljs-string">'name2'</span>,<br>            <span class="hljs-attr">artist</span>: <span class="hljs-string">'artist2'</span>,<br>            <span class="hljs-attr">url</span>: <span class="hljs-string">'url2.mp3'</span>,<br>            <span class="hljs-attr">cover</span>: <span class="hljs-string">'cover2.jpg'</span>,<br>            <span class="hljs-attr">lrc</span>: <span class="hljs-string">'lrc2.lrc'</span>,<br>            <span class="hljs-attr">theme</span>: <span class="hljs-string">'#46718b'</span><br>        }<br>    ]<br>});<br></code></pre></td></tr></tbody></table></figure>
-<h2 id="api">API</h2>
+<h2 id="API">API</h2>
 <ul>
-<li><p><code>APlayer.version</code>: 静态属性, 返回 APlayer
-的版本号</p></li>
-<li><p><code>ap.play()</code>: 播放音频</p></li>
-<li><p><code>ap.pause()</code>: 暂停音频</p></li>
-<li><p><code>ap.seek(time: number)</code>:
-跳转到特定时间，时间的单位为秒</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js">ap.<span class="hljs-title function_">seek</span>(<span class="hljs-number">100</span>);<br></code></pre></td></tr></tbody></table></figure></li>
-<li><p><code>ap.toggle()</code>: 切换播放和暂停</p></li>
-<li><p><code>ap.on(event: string, handler: function)</code>:
-绑定音频和播放器事件，<a target="_blank" rel="noopener" href="https://aplayer.js.org/#/home?id=event-binding">详情</a></p></li>
-<li><p><code>ap.volume(percentage: number, nostorage: boolean)</code>:
-设置音频音量</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js">ap.<span class="hljs-title function_">volume</span>(<span class="hljs-number">0.1</span>, <span class="hljs-literal">true</span>);<br></code></pre></td></tr></tbody></table></figure></li>
-<li><p><code>ap.theme(color: string, index: number)</code>:
-设置播放器主题色, index 默认为当前音频的 index</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js">ap.<span class="hljs-title function_">theme</span>(<span class="hljs-string">'#000'</span>, <span class="hljs-number">0</span>);<br></code></pre></td></tr></tbody></table></figure></li>
-<li><p><code>ap.setMode(mode: string)</code>: 设置播放器模式，mode
-取值应为 'mini' 或 'normal'</p></li>
-<li><p><code>ap.mode</code>: 返回播放器当前模式，'mini' 或
-'normal'</p></li>
-<li><p><code>ap.notice(text: string, time: number, opacity: number)</code>:
-显示通知，时间的单位为毫秒，默认时间 2000 毫秒，默认透明度
-0.8，设置时间为 0 可以取消通知自动隐藏</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js">ap.<span class="hljs-title function_">notice</span>(<span class="hljs-string">'Amazing player'</span>, <span class="hljs-number">2000</span>, <span class="hljs-number">0.8</span>);<br></code></pre></td></tr></tbody></table></figure></li>
-<li><p><code>ap.skipBack()</code>: 切换到上一首音频</p></li>
-<li><p><code>ap.skipForward()</code>: 切换到下一首音频</p></li>
-<li><p><code>ap.destroy()</code>: 销毁播放器</p></li>
-<li><p><code>ap.lrc</code></p>
+<li>
+<p><code>APlayer.version</code>: 静态属性, 返回 APlayer 的版本号</p>
+</li>
+<li>
+<p><code>ap.play()</code>: 播放音频</p>
+</li>
+<li>
+<p><code>ap.pause()</code>: 暂停音频</p>
+</li>
+<li>
+<p><code>ap.seek(time: number)</code>: 跳转到特定时间，时间的单位为秒</p>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js">ap.<span class="hljs-title function_">seek</span>(<span class="hljs-number">100</span>);<br></code></pre></td></tr></tbody></table></figure>
+</li>
+<li>
+<p><code>ap.toggle()</code>: 切换播放和暂停</p>
+</li>
+<li>
+<p><code>ap.on(event: string, handler: function)</code>: 绑定音频和播放器事件，<a target="_blank" rel="noopener" href="https://aplayer.js.org/#/home?id=event-binding">详情</a></p>
+</li>
+<li>
+<p><code>ap.volume(percentage: number, nostorage: boolean)</code>: 设置音频音量</p>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js">ap.<span class="hljs-title function_">volume</span>(<span class="hljs-number">0.1</span>, <span class="hljs-literal">true</span>);<br></code></pre></td></tr></tbody></table></figure>
+</li>
+<li>
+<p><code>ap.theme(color: string, index: number)</code>: 设置播放器主题色, index 默认为当前音频的 index</p>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js">ap.<span class="hljs-title function_">theme</span>(<span class="hljs-string">'#000'</span>, <span class="hljs-number">0</span>);<br></code></pre></td></tr></tbody></table></figure>
+</li>
+<li>
+<p><code>ap.setMode(mode: string)</code>: 设置播放器模式，mode 取值应为 ‘mini’ 或 ‘normal’</p>
+</li>
+<li>
+<p><code>ap.mode</code>: 返回播放器当前模式，‘mini’ 或 ‘normal’</p>
+</li>
+<li>
+<p><code>ap.notice(text: string, time: number, opacity: number)</code>: 显示通知，时间的单位为毫秒，默认时间 2000 毫秒，默认透明度 0.8，设置时间为 0 可以取消通知自动隐藏</p>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js">ap.<span class="hljs-title function_">notice</span>(<span class="hljs-string">'Amazing player'</span>, <span class="hljs-number">2000</span>, <span class="hljs-number">0.8</span>);<br></code></pre></td></tr></tbody></table></figure>
+</li>
+<li>
+<p><code>ap.skipBack()</code>: 切换到上一首音频</p>
+</li>
+<li>
+<p><code>ap.skipForward()</code>: 切换到下一首音频</p>
+</li>
+<li>
+<p><code>ap.destroy()</code>: 销毁播放器</p>
+</li>
+<li>
+<p><code>ap.lrc</code></p>
 <ul>
-<li><p><code>ap.lrc.show()</code>: 显示歌词</p></li>
-<li><p><code>ap.lrc.hide()</code>: 隐藏歌词</p></li>
-<li><p><code>ap.lrc.toggle()</code>: 显示/隐藏歌词</p></li>
-</ul></li>
-<li><p><code>ap.list</code></p>
+<li>
+<p><code>ap.lrc.show()</code>: 显示歌词</p>
+</li>
+<li>
+<p><code>ap.lrc.hide()</code>: 隐藏歌词</p>
+</li>
+<li>
+<p><code>ap.lrc.toggle()</code>: 显示/隐藏歌词</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>ap.list</code></p>
 <ul>
-<li><p><code>ap.list.show()</code>: 显示播放列表</p></li>
-<li><p><code>ap.list.hide()</code>: 隐藏播放列表</p></li>
-<li><p><code>ap.list.toggle()</code>: 显示/隐藏播放列表</p></li>
-<li><p><code>ap.list.add(audios: array | object)</code>:
-添加一个或几个新音频到播放列表</p></li>
+<li>
+<p><code>ap.list.show()</code>: 显示播放列表</p>
+</li>
+<li>
+<p><code>ap.list.hide()</code>: 隐藏播放列表</p>
+</li>
+<li>
+<p><code>ap.list.toggle()</code>: 显示/隐藏播放列表</p>
+</li>
+<li>
+<p><code>ap.list.add(audios: array | object)</code>: 添加一个或几个新音频到播放列表</p>
+</li>
 </ul>
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs js">ap.<span class="hljs-property">list</span>.<span class="hljs-title function_">add</span>([{<br>    <span class="hljs-attr">name</span>: <span class="hljs-string">'name'</span>,<br>    <span class="hljs-attr">artist</span>: <span class="hljs-string">'artist'</span>,<br>    <span class="hljs-attr">url</span>: <span class="hljs-string">'url.mp3'</span>,<br>    <span class="hljs-attr">cover</span>: <span class="hljs-string">'cover.jpg'</span>,<br>    <span class="hljs-attr">lrc</span>: <span class="hljs-string">'lrc.lrc'</span>,<br>    <span class="hljs-attr">theme</span>: <span class="hljs-string">'#ebd0c2'</span><br>}]);<br></code></pre></td></tr></tbody></table></figure>
 <ul>
-<li><code>ap.list.remove(index: number)</code>:
-移除播放列表中的一个音频</li>
+<li><code>ap.list.remove(index: number)</code>: 移除播放列表中的一个音频</li>
 </ul>
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js">ap.<span class="hljs-property">list</span>.<span class="hljs-title function_">remove</span>(<span class="hljs-number">1</span>);<br></code></pre></td></tr></tbody></table></figure>
 <ul>
@@ -449,12 +483,23 @@
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js">ap.<span class="hljs-property">list</span>.<span class="hljs-title function_">switch</span>(<span class="hljs-number">1</span>);<br></code></pre></td></tr></tbody></table></figure>
 <ul>
 <li><code>ap.list.clear()</code>: 清空播放列表</li>
-</ul></li>
-<li><p><code>ap.audio</code>: 原生 audio</p></li>
-<li><p><code>ap.audio.currentTime</code>: 返回音频当前播放时间</p></li>
-<li><p><code>ap.audio.duration</code>: 返回音频总时间</p></li>
-<li><p><code>ap.audio.paused</code>: 返回音频是否暂停</p></li>
-<li><p>支持大多数<a target="_blank" rel="noopener" href="http://www.w3schools.com/tags/ref_av_dom.asp">原生audio接口</a></p></li>
+</ul>
+</li>
+<li>
+<p><code>ap.audio</code>: 原生 audio</p>
+</li>
+<li>
+<p><code>ap.audio.currentTime</code>: 返回音频当前播放时间</p>
+</li>
+<li>
+<p><code>ap.audio.duration</code>: 返回音频总时间</p>
+</li>
+<li>
+<p><code>ap.audio.paused</code>: 返回音频是否暂停</p>
+</li>
+<li>
+<p>支持大多数<a target="_blank" rel="noopener" href="http://www.w3schools.com/tags/ref_av_dom.asp">原生audio接口</a></p>
+</li>
 </ul>
 <h2 id="事件绑定">事件绑定</h2>
 <p><code>ap.on(event, handler)</code></p>
@@ -500,20 +545,17 @@
 <li>lrchide</li>
 </ul>
 <h2 id="歌词">歌词</h2>
-<p>我们有三种方式来给 APlayer 传递歌词，使用 <code>lrcType</code>
-参数指明使用哪种方式，然后把歌词放到 <code>audio.lrc</code> 参数或者
-HTML 里。</p>
+<p>我们有三种方式来给 APlayer 传递歌词，使用 <code>lrcType</code> 参数指明使用哪种方式，然后把歌词放到 <code>audio.lrc</code> 参数或者 HTML 里。</p>
 <div class="aplayer-wrap">
-<pre><code class="hljs">&lt;div id="aplayer4"&gt;&lt;button class="docute-button load"&gt;点击加载播放器&lt;/div&gt;</code></pre>
+    <div id="aplayer4"><button class="docute-button load">点击加载播放器</button></div>
 </div>
-<h3 id="lrc-文件方式">LRC 文件方式</h3>
-<p>第一种方式，把歌词放到 LRC 文件里，音频播放时会加载对应的 LRC
-文件。</p>
+<h3 id="LRC-文件方式">LRC 文件方式</h3>
+<p>第一种方式，把歌词放到 LRC 文件里，音频播放时会加载对应的 LRC 文件。</p>
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> ap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">APlayer</span>({<br>    <span class="hljs-attr">container</span>: <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'aplayer'</span>),<br>    <span class="hljs-attr">lrcType</span>: <span class="hljs-number">3</span>,<br>    <span class="hljs-attr">audio</span>: {<br>        <span class="hljs-attr">name</span>: <span class="hljs-string">'name'</span>,<br>        <span class="hljs-attr">artist</span>: <span class="hljs-string">'artist'</span>,<br>        <span class="hljs-attr">url</span>: <span class="hljs-string">'demo.mp3'</span>,<br>        <span class="hljs-attr">cover</span>: <span class="hljs-string">'demo.jpg'</span>,<br>        <span class="hljs-attr">lrc</span>: <span class="hljs-string">'lrc.lrc'</span><br>    }<br>});<br></code></pre></td></tr></tbody></table></figure>
-<h3 id="js-字符串方式">JS 字符串方式</h3>
+<h3 id="JS-字符串方式">JS 字符串方式</h3>
 <p>第二种方式，把歌词放到 JS 字符串里面。</p>
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> ap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">APlayer</span>({<br>    <span class="hljs-attr">container</span>: <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'aplayer'</span>),<br>    <span class="hljs-attr">lrcType</span>: <span class="hljs-number">1</span>,<br>    <span class="hljs-attr">audio</span>: {<br>        <span class="hljs-attr">name</span>: <span class="hljs-string">'name'</span>,<br>        <span class="hljs-attr">artist</span>: <span class="hljs-string">'artist'</span>,<br>        <span class="hljs-attr">url</span>: <span class="hljs-string">'demo.mp3'</span>,<br>        <span class="hljs-attr">cover</span>: <span class="hljs-string">'demo.jpg'</span>,<br>        <span class="hljs-attr">lrc</span>: <span class="hljs-string">'[00:00.00]APlayer\n[00:04.01]is\n[00:08.02]amazing'</span><br>    }<br>});<br></code></pre></td></tr></tbody></table></figure>
-<h3 id="html-方式">HTML 方式</h3>
+<h3 id="HTML-方式">HTML 方式</h3>
 <p>第三种方式，把歌词放到 HTML 里面。</p>
 <figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"APlayer.min.css"</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"player"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">pre</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"aplayer-lrc-content"</span>&gt;</span><br>        [00:00.00]APlayer audio1<br>        [00:04.01]is<br>        [00:08.02]amazing<br>        <span class="hljs-comment">&lt;!-- ... --&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">pre</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"aplayer-lrc-content"</span>&gt;</span><br>        [00:00.00]APlayer audio2<br>        [00:04.01]is<br>        [00:08.02]amazing<br>        <span class="hljs-comment">&lt;!-- ... --&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"APlayer.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></tbody></table></figure>
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> ap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">APlayer</span>({<br>    <span class="hljs-attr">container</span>: <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'aplayer'</span>),<br>    <span class="hljs-attr">lrcType</span>: <span class="hljs-number">2</span>,<br>    <span class="hljs-attr">audio</span>: [[<br>        {<br>            <span class="hljs-attr">name</span>: <span class="hljs-string">'name1'</span>,<br>            <span class="hljs-attr">artist</span>: <span class="hljs-string">'artist1'</span>,<br>            <span class="hljs-attr">url</span>: <span class="hljs-string">'url1.mp3'</span>,<br>            <span class="hljs-attr">cover</span>: <span class="hljs-string">'cover1.jpg'</span><br>        },<br>        {<br>            <span class="hljs-attr">name</span>: <span class="hljs-string">'name2'</span>,<br>            <span class="hljs-attr">artist</span>: <span class="hljs-string">'artist2'</span>,<br>            <span class="hljs-attr">url</span>: <span class="hljs-string">'url2.mp3'</span>,<br>            <span class="hljs-attr">cover</span>: <span class="hljs-string">'cover2.jpg'</span><br>        }<br>    ]]<br>});<br></code></pre></td></tr></tbody></table></figure>
@@ -526,32 +568,29 @@ HTML 里。</p>
 <p><code>[mm:ss.xx]&lt;mm:ss.xx&gt;is</code></p>
 <p><code>[mm:ss.xx]amazing[mm:ss.xx]APlayer</code></p>
 <h2 id="播放列表">播放列表</h2>
-<p>当有多个音频时会 APlayer 会展示一个播放列表，<code>listFolded</code>
-参数指明列表是否默认折叠，<code>listMaxHeight</code>
-参数指明列表最大高度。</p>
+<p>当有多个音频时会 APlayer 会展示一个播放列表，<code>listFolded</code> 参数指明列表是否默认折叠，<code>listMaxHeight</code> 参数指明列表最大高度。</p>
 <div class="aplayer-wrap">
-<pre><code class="hljs">&lt;div id="aplayer5"&gt;&lt;button class="docute-button load"&gt;点击加载播放器&lt;/div&gt;</code></pre>
+    <div id="aplayer5"><button class="docute-button load">点击加载播放器</button></div>
 </div>
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> ap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">APlayer</span>({<br>    <span class="hljs-attr">container</span>: <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'player'</span>),<br>    <span class="hljs-attr">listFolded</span>: <span class="hljs-literal">false</span>,<br>    <span class="hljs-attr">listMaxHeight</span>: <span class="hljs-number">90</span>,<br>    <span class="hljs-attr">lrcType</span>: <span class="hljs-number">3</span>,<br>    <span class="hljs-attr">audio</span>: [<br>        {<br>            <span class="hljs-attr">name</span>: <span class="hljs-string">'name1'</span>,<br>            <span class="hljs-attr">artist</span>: <span class="hljs-string">'artist1'</span>,<br>            <span class="hljs-attr">url</span>: <span class="hljs-string">'url1.mp3'</span>,<br>            <span class="hljs-attr">cover</span>: <span class="hljs-string">'cover1.jpg'</span>,<br>            <span class="hljs-attr">lrc</span>: <span class="hljs-string">'lrc1.lrc'</span>,<br>            <span class="hljs-attr">theme</span>: <span class="hljs-string">'#ebd0c2'</span><br>        },<br>        {<br>            <span class="hljs-attr">name</span>: <span class="hljs-string">'name2'</span>,<br>            <span class="hljs-attr">artist</span>: <span class="hljs-string">'artist2'</span>,<br>            <span class="hljs-attr">url</span>: <span class="hljs-string">'url2.mp3'</span>,<br>            <span class="hljs-attr">cover</span>: <span class="hljs-string">'cover2.jpg'</span>,<br>            <span class="hljs-attr">lrc</span>: <span class="hljs-string">'lrc2.lrc'</span>,<br>            <span class="hljs-attr">theme</span>: <span class="hljs-string">'#46718b'</span><br>        }<br>    ]<br>});<br></code></pre></td></tr></tbody></table></figure>
 <h2 id="吸底模式">吸底模式</h2>
-<p>APlayer
-可以通过吸底模式固定在页面底部，这种模式跟普通模式有很大不同。</p>
+<p>APlayer 可以通过吸底模式固定在页面底部，这种模式跟普通模式有很大不同。</p>
 <div class="aplayer-wrap">
-<pre><code class="hljs">&lt;div id="aplayer9"&gt;&lt;button class="docute-button load"&gt;点击加载播放器&lt;/div&gt;</code></pre>
+    <div id="aplayer9"><button class="docute-button load">点击加载播放器</button></div>
 </div>
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> ap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">APlayer</span>({<br>    <span class="hljs-attr">container</span>: <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'player'</span>),<br>    <span class="hljs-attr">fixed</span>: <span class="hljs-literal">true</span>,<br>    <span class="hljs-attr">audio</span>: [{<br>        <span class="hljs-attr">name</span>: <span class="hljs-string">'name'</span>,<br>        <span class="hljs-attr">artist</span>: <span class="hljs-string">'artist'</span>,<br>        <span class="hljs-attr">url</span>: <span class="hljs-string">'url.mp3'</span>,<br>        <span class="hljs-attr">cover</span>: <span class="hljs-string">'cover.jpg'</span>,<br>    }]<br>});<br></code></pre></td></tr></tbody></table></figure>
 <h2 id="迷你模式">迷你模式</h2>
 <p>如果你没有足够空间来放置正常模式的播放器，那么你可以考虑使用迷你模式。</p>
 <p>请注意迷你模式与吸底模式冲突。</p>
 <div class="aplayer-wrap">
-<pre><code class="hljs">&lt;div id="aplayer6"&gt;&lt;button class="docute-button load"&gt;点击加载播放器&lt;/div&gt;</code></pre>
+    <div id="aplayer6"><button class="docute-button load">点击加载播放器</button></div>
 </div>
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> ap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">APlayer</span>({<br>    <span class="hljs-attr">container</span>: <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'player'</span>),<br>    <span class="hljs-attr">mini</span>: <span class="hljs-literal">true</span>,<br>    <span class="hljs-attr">audio</span>: [{<br>        <span class="hljs-attr">name</span>: <span class="hljs-string">'name'</span>,<br>        <span class="hljs-attr">artist</span>: <span class="hljs-string">'artist'</span>,<br>        <span class="hljs-attr">url</span>: <span class="hljs-string">'url.mp3'</span>,<br>        <span class="hljs-attr">cover</span>: <span class="hljs-string">'cover.jpg'</span>,<br>    }]<br>});<br></code></pre></td></tr></tbody></table></figure>
-<h2 id="mse-支持">MSE 支持</h2>
-<h3 id="hls">HLS</h3>
+<h2 id="MSE-支持">MSE 支持</h2>
+<h3 id="HLS">HLS</h3>
 <p>需要在 <code>APlayer.min.js</code> 前面加载 <a target="_blank" rel="noopener" href="https://github.com/video-dev/hls.js">hls.js</a>。</p>
 <div class="aplayer-wrap">
-<pre><code class="hljs">&lt;div id="aplayer7"&gt;&lt;button class="docute-button load"&gt;点击加载播放器&lt;/div&gt;</code></pre>
+    <div id="aplayer7"><button class="docute-button load">点击加载播放器</button></div>
 </div>
 <figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"APlayer.min.css"</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"aplayer"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"hls.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"APlayer.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></tbody></table></figure>
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> ap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">APlayer</span>({<br>    <span class="hljs-attr">container</span>: <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'aplayer'</span>),<br>    <span class="hljs-attr">audio</span>: [{<br>        <span class="hljs-attr">name</span>: <span class="hljs-string">'HLS'</span>,<br>        <span class="hljs-attr">artist</span>: <span class="hljs-string">'artist'</span>,<br>        <span class="hljs-attr">url</span>: <span class="hljs-string">'url.m3u8'</span>,<br>        <span class="hljs-attr">cover</span>: <span class="hljs-string">'cover.jpg'</span>,<br>        <span class="hljs-attr">type</span>: <span class="hljs-string">'hls'</span><br>    }]<br>});<br></code></pre></td></tr></tbody></table></figure>
@@ -559,18 +598,18 @@ HTML 里。</p>
 <h2 id="根据封面自适应主题色">根据封面自适应主题色</h2>
 <p>需要额外加载 <a target="_blank" rel="noopener" href="https://github.com/lokesh/color-thief/blob/master/src/color-thief.js">color-thief.js</a></p>
 <div class="aplayer-wrap">
-<pre><code class="hljs">&lt;div id="aplayer8"&gt;&lt;button class="docute-button load"&gt;点击加载播放器&lt;/div&gt;</code></pre>
+    <div id="aplayer8"><button class="docute-button load">点击加载播放器</button></div>
 </div>
 <figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"APlayer.min.css"</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"aplayer"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"APlayer.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"color-thief.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></tbody></table></figure>
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> ap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">APlayer</span>({<br>    <span class="hljs-attr">container</span>: <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'aplayer'</span>),<br>    <span class="hljs-attr">theme</span>: <span class="hljs-string">'#e9e9e9'</span>,<br>    <span class="hljs-attr">audio</span>: [{<br>        <span class="hljs-attr">name</span>: <span class="hljs-string">'name1'</span>,<br>        <span class="hljs-attr">artist</span>: <span class="hljs-string">'artist1'</span>,<br>        <span class="hljs-attr">url</span>: <span class="hljs-string">'url1.mp3'</span>,<br>        <span class="hljs-attr">cover</span>: <span class="hljs-string">'cover1.jpg'</span><br>    }, {<br>        <span class="hljs-attr">name</span>: <span class="hljs-string">'name2'</span>,<br>        <span class="hljs-attr">artist</span>: <span class="hljs-string">'artist2'</span>,<br>        <span class="hljs-attr">url</span>: <span class="hljs-string">'url2.mp3'</span>,<br>        <span class="hljs-attr">cover</span>: <span class="hljs-string">'cover2.jpg'</span><br>    }]<br>});<br><br><span class="hljs-keyword">const</span> colorThief = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ColorThief</span>();<br><span class="hljs-keyword">const</span> image = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Image</span>();<br><span class="hljs-keyword">const</span> xhr = <span class="hljs-keyword">new</span> <span class="hljs-title class_">XMLHttpRequest</span>();<br><span class="hljs-keyword">const</span> <span class="hljs-title function_">setTheme</span> = (<span class="hljs-params">index</span>) =&gt; {<br>    <span class="hljs-keyword">if</span> (!ap.<span class="hljs-property">list</span>.<span class="hljs-property">audios</span>[index].<span class="hljs-property">theme</span>) {<br>        xhr.<span class="hljs-property">onload</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>){<br>            <span class="hljs-keyword">let</span> coverUrl = <span class="hljs-variable constant_">URL</span>.<span class="hljs-title function_">createObjectURL</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">response</span>);<br>            image.<span class="hljs-property">onload</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>){<br>                <span class="hljs-keyword">let</span> color = colorThief.<span class="hljs-title function_">getColor</span>(image);<br>                ap.<span class="hljs-title function_">theme</span>(<span class="hljs-string">`rgb(<span class="hljs-subst">${color[<span class="hljs-number">0</span>]}</span>, <span class="hljs-subst">${color[<span class="hljs-number">1</span>]}</span>, <span class="hljs-subst">${color[<span class="hljs-number">2</span>]}</span>)`</span>, index);<br>                <span class="hljs-variable constant_">URL</span>.<span class="hljs-title function_">revokeObjectURL</span>(coverUrl)<br>            };<br>            image.<span class="hljs-property">src</span> = coverUrl;<br>        }<br>        xhr.<span class="hljs-title function_">open</span>(<span class="hljs-string">'GET'</span>, ap.<span class="hljs-property">list</span>.<span class="hljs-property">audios</span>[index].<span class="hljs-property">cover</span>, <span class="hljs-literal">true</span>);<br>        xhr.<span class="hljs-property">responseType</span> = <span class="hljs-string">'blob'</span>;<br>        xhr.<span class="hljs-title function_">send</span>();<br>    }<br>};<br><span class="hljs-title function_">setTheme</span>(ap.<span class="hljs-property">list</span>.<span class="hljs-property">index</span>);<br>ap.<span class="hljs-title function_">on</span>(<span class="hljs-string">'listswitch'</span>, <span class="hljs-function">(<span class="hljs-params">index</span>) =&gt;</span> {<br>    <span class="hljs-title function_">setTheme</span>(index);<br>});<br></code></pre></td></tr></tbody></table></figure>
-<h2 id="cdn">CDN</h2>
+<h2 id="CDN">CDN</h2>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://www.jsdelivr.com/package/npm/aplayer">jsDelivr</a></li>
 <li><a target="_blank" rel="noopener" href="https://cdnjs.com/libraries/aplayer">cdnjs</a></li>
 <li><a target="_blank" rel="noopener" href="https://unpkg.com/aplayer/">unpkg</a></li>
 </ul>
 <h2 id="常见问题">常见问题</h2>
-<h3 id="为什么播放器不能在手机上自动播放">为什么播放器不能在手机上自动播放？</h3>
+<h3 id="为什么播放器不能在手机上自动播放？">为什么播放器不能在手机上自动播放？</h3>
 <p>大多数移动端浏览器禁止了音频自动播放。</p>
 
 
